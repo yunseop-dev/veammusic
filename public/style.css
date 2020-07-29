@@ -160,6 +160,13 @@ body {
   height: 1.4rem;
 }
 
+.btn_lg {
+}
+
+.btn_lg img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
 /* now playing */
 .now-playing {
   padding: 2rem;
@@ -210,20 +217,34 @@ body {
 
 /* music player */
 .music-player {
+  position: relative;
   text-align: center;
+  background-color: grey;
+  padding: 2rem;
 }
 .music-player_time {
   float: left;
+  color: #fff;
 }
 .music-player_controllers {
 }
+
 .music-player_utils {
   float: right;
 }
 
 /* progress bar */
 .progress_bar {
-  border: 2px solid red;
+  margin-top: 1rem;
+  /* height: 1rem; */
+  background-color: cyan;
+}
+.progress_bar::before {
+  display: block;
+  content: " ";
+  width: 50%;
+  height: 0.2rem;
+  background-color: red;
 }
 
 /* hashtags */
