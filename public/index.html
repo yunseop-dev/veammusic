@@ -4,11 +4,12 @@
 <head>
     <title>V E A M M U S I C</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
 </head>
 
 <body>
     <div class="l_wrapper">
-        <div class="section">
+        <section class="section">
             <h1 class="section_title">빔뮤직 차트
                 <span class="section_subtitle">2015-12-19 16:00</span>
             </h1>
@@ -121,54 +122,71 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="section">
+        </section>
+        <section class="section">
             <h1 class="section_title">빔뮤직 추천곡</h1>
             <a class="section_more" href="#">더보기
                 <img src="./assets/png/arrow.png" alt="more">
             </a>
             <div class="section_contents">
                 <ul class="section_tabs">
-                    <li class="tab">theme</li>
-                    <li class="tab">best</li>
-                    <li class="tab">special</li>
+                    <li class="tab">
+                        <div class="recommend-tab">
+                            <img src="./assets/svg/icon_theme.svg" alt="theme">
+                            <span class="recommend-tab_text">theme</span>
+                        </div>
+                    </li>
+                    <li class="tab">
+                        <div class="recommend-tab">
+                            <img src="./assets/svg/icon_best.svg" alt="best">
+                            <span class="recommend-tab_text">best</span>
+                        </div>
+                    </li>
+                    <li class="tab">
+                        <div class="recommend-tab">
+                            <img src="./assets/svg/icon_special.svg" alt="special">
+                            <span class="recommend-tab_text">special</span>
+                        </div>
+                    </li>
                 </ul>
                 <div class="now-playing">
                     <div class="now-playing_contents clearfix">
                         <img class="now-playing_cover" src="./assets/png/album_muzgrain.png" alt="album cover">
-                        <h1 class="now-playing_title">심장이 간질간질한 음악이 듣고 싶을 때</h1>
-                        <h2 class="now-playing_subtitle">
-                            <img src="./assets/svg/icon_music.svg" alt="music">
-                            <span>눈감으면 외 14곡</span>
-                        </h2>
-                        <ul class="now-playing_hashtags">
-                            <li class="hashtag hashtag_red">love</li>
-                            <li class="hashtag hashtag_blue">winter</li>
-                        </ul>
-                        <div class="now-playing_release">2015-12-13</div>
+                        <div class="now-playing_information">
+                            <h1 class="now-playing_title">심장이 간질간질한 음악이 듣고 싶을 때</h1>
+                            <h2 class="now-playing_subtitle">
+                                <img src="./assets/svg/icon_music.svg" alt="music">
+                                <span>눈감으면 외 14곡</span>
+                            </h2>
+                            <ul class="now-playing_hashtags">
+                                <li class="hashtag hashtag_red">love</li>
+                                <li class="hashtag hashtag_blue">winter</li>
+                            </ul>
+                            <div class="now-playing_release">2015-12-13</div>
+                        </div>
                     </div>
                 </div>
                 <div class="playlist">
                     <ul>
-                        <li>
+                        <li class="playlist_item">
                             <button class="btn"><img src="./assets/svg/icon_play_circle.svg" alt="play button"></button>
-                            <span>눈감으면</span> / <span>오리엔탈 쇼커스</span>
+                            <span class="playlist_item_title">눈감으면</span> / <span class="playlist_item_singer">오리엔탈 쇼커스</span>
                         </li>
-                        <li>
+                        <li class="playlist_item">
                             <button class="btn"><img src="./assets/svg/icon_play_circle.svg" alt="play button"></button>
-                            <span>눈감으면</span> / <span>오리엔탈 쇼커스</span>
+                            <span class="playlist_item_title">눈감으면</span> / <span class="playlist_item_singer">오리엔탈 쇼커스</span>
                         </li>
-                        <li>
+                        <li class="playlist_item">
                             <button class="btn"><img src="./assets/svg/icon_play_circle.svg" alt="play button"></button>
-                            <span>눈감으면</span> / <span>오리엔탈 쇼커스</span>
+                            <span class="playlist_item_title">눈감으면</span> / <span class="playlist_item_singer">오리엔탈 쇼커스</span>
                         </li>
-                        <li>
+                        <li class="playlist_item">
                             <button class="btn"><img src="./assets/svg/icon_play_circle.svg" alt="play button"></button>
-                            <span>눈감으면</span> / <span>오리엔탈 쇼커스</span>
+                            <span class="playlist_item_title">눈감으면</span> / <span class="playlist_item_singer">오리엔탈 쇼커스</span>
                         </li>
-                        <li>
+                        <li class="playlist_item">
                             <button class="btn"><img src="./assets/svg/icon_play_circle.svg" alt="play button"></button>
-                            <span>눈감으면</span> / <span>오리엔탈 쇼커스</span>
+                            <span class="playlist_item_title">눈감으면</span> / <span class="playlist_item_singer">오리엔탈 쇼커스</span>
                         </li>
                     </ul>
                 </div>
@@ -198,7 +216,7 @@
                     <div class="progress_bar"></div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </body>
 
