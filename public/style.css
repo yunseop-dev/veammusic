@@ -2,7 +2,9 @@
 body,
 ul,
 h1,
-h2 {
+h2,
+tr,
+td {
   margin: 0;
   padding: 0;
 }
@@ -21,9 +23,9 @@ img {
 }
 
 /* debug */
-* * {
+/* * * {
   background-color: rgba(255, 0, 0, 0.1);
-}
+} */
 
 /* Commons */
 .clearfix:before,
@@ -68,7 +70,7 @@ body {
   margin-bottom: 1rem;
 }
 .section_subtitle {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .section_more {
   font-size: 1.4frem;
@@ -95,12 +97,18 @@ body {
   border-top: 2px solid red;
 }
 
+/* chrt tab */
+.chart-tab {
+  padding: 0.8rem;
+}
+
 /* recommend tab */
 .recommend-tab {
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;
   padding: 0.9rem;
+  background-color: grey;
 }
 .recommend-tab_text {
   display: block;
@@ -117,35 +125,68 @@ body {
   font-size: 1.4rem;
 }
 .chart_list {
+  width: 100%;
+}
+
+.list_item:first-child {
+  height: 6rem;
+  line-height: 6rem;
 }
 .list_item {
   overflow: hidden;
   border-bottom: 1px solid black;
+  height: 3rem;
+  line-height: 3rem;
 }
+
 .list_item:nth-child(even) {
   background-color: grey;
 }
 .list_change {
+  font-size: 1.2rem;
+}
+.list_change img {
+  width: 0.8rem;
+  vertical-align: baseline;
 }
 .list_cover {
+  vertical-align: middle;
 }
 .list_cover img {
 }
+
+.list_item:first-child .list_title {
+  font-weight: 800;
+}
+
 .list_title {
   display: inline;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 .list_singer {
+  font-size: 1.2rem;
 }
 .list_controllers {
-  float: right;
+  /* float: right; */
+  text-align: center;
 }
 .chart_controllers {
-  margin: 1.2rem;
+  margin: 1.2rem 0;
 }
 .chart_controllers .btn {
   border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0 0.1rem;
+}
+.btn_play {
+  float: left;
+}
+.btn_add {
+  float: right;
+}
+.btn_download {
+  float: right;
 }
 
 /* button */
@@ -161,6 +202,8 @@ body {
 }
 
 .btn_lg {
+  vertical-align: top;
+  margin: 0 1rem;
 }
 
 .btn_lg img {
@@ -227,6 +270,8 @@ body {
   color: #fff;
 }
 .music-player_controllers {
+  height: 3rem;
+  line-height: 3rem;
 }
 
 .music-player_utils {
