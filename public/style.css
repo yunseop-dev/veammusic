@@ -13,6 +13,11 @@ li {
   list-style-type: none;
 }
 
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -42,6 +47,12 @@ button {
 } */
 
 /* Commons */
+.col-10 { width: 10%; }
+.col-15 { width: 15%; }
+.col-20 { width: 20%; }
+.col-35 { width: 35%; }
+.col-50 { width: 55%; }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -192,28 +203,28 @@ body {
 }
 .chart_list {
   width: 100%;
+  text-align: center;
 }
 
-.list_item:first-child {
-  height: 6rem;
-  line-height: 6rem;
-}
 .list_item {
   overflow: hidden;
-  border-bottom: 1px solid black;
-  height: 3rem;
-  line-height: 3rem;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1;
+}
+
+.list_item td {
+  padding: 9px 0;
 }
 
 .list_item:nth-child(even) {
-  background-color: grey;
+  background-color: #fcfcfc;
 }
 .list_change {
   font-size: 1.2rem;
 }
 .list_change img {
-  width: 0.8rem;
-  vertical-align: baseline;
+  width: 0.6em;
+  transform: translateY(20%);
 }
 .list_cover {
   vertical-align: middle;
@@ -221,13 +232,8 @@ body {
 .list_cover img {
 }
 
-.list_item:first-child .list_title {
-  font-weight: 800;
-}
-
 .list_title {
   display: inline;
-  font-weight: 600;
   font-size: 1.2rem;
 }
 .list_singer {
