@@ -22,6 +22,20 @@ img {
   vertical-align: top;
 }
 
+button {
+    background: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    font: inherit;
+}
+
+:root {
+    --primary-color: #f43a80;
+    --gray-color: #817e8e;
+}
+
 /* debug */
 /* * * {
   background-color: rgba(255, 0, 0, 0.1);
@@ -53,54 +67,103 @@ body {
   max-width: 960px;
   margin: 0 auto;
   position: relative;
-  padding: 0 20px;
 }
 
 /* components */
+body {
+    background-color: #ddd;
+}
+
+.contents {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    margin: 0 -20px;
+}
 
 /* section */
 .section {
+  width: 50%;
   float: left;
-  min-width: 36rem;
-  margin: 0.8rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.section_header {
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 .section_title {
   display: inline-block;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  line-height: 1;
 }
 .section_subtitle {
   font-size: 1rem;
 }
-.section_more {
-  font-size: 1.4frem;
+.section_side {
   float: right;
 }
-.section_more img {
-  width: 1.2rem;
-  height: 1.2rem;
+.section_more {
+  font-size: 1rem;
+  line-height: 1;
+}
+.section_more::after {
+  content: '>';
+  display: inline-block;
+  background-image: url(./assets/png/arrow.png);
+  text-indent: -9999px;
+  margin-left: 4px;
+  width: 6px;
+  height: 10px;
+  background-size: 6px 10px;
 }
 
 /* tab */
-.section_tabs {
-  overflow: hidden;
+.tab {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #ddd;
 }
 
-.tab {
+/* tab */
+.tab_item {
   float: left;
   width: 33.3333%;
-  border-top: 2px solid black;
-}
-.tab.is-active {
-  border-top: 2px solid red;
+  position: relative;
 }
 
-/* chrt tab */
-.chart-tab {
+.tab_item + .tab_item:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #ddd;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.tab_button {
   padding: 0.8rem;
 }
+
+.tab_button:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background-color: var(--gray-color);
+  margin: 0 -1px;
+  transform: translateY( calc( -100% + 1px ) );
+}
+.tab_button.is-active:after {
+  background-color: var(--primary-color);
+}
+
 
 /* recommend tab */
 .recommend-tab {
