@@ -147,6 +147,8 @@ body {
 
 .tab_button {
   padding: 0.8rem;
+  display: block;
+  width: 100%;
 }
 
 .tab_button:after {
@@ -162,6 +164,7 @@ body {
 }
 .tab_button.is-active:after {
   background-color: var(--primary-color);
+  z-index: 10;
 }
 
 
