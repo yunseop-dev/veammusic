@@ -204,7 +204,6 @@ body {
 .chart_list {
   width: 100%;
   text-align: center;
-  margin-bottom: 15px;
 }
 
 .list_item {
@@ -244,45 +243,12 @@ body {
   /* float: right; */
   text-align: center;
 }
+.chart_controllers {
+  margin: 1.2rem 0;
+}
 
 
 /* button */
-.controllers {
-  overflow: hidden;
-}
-
-.controllers-left {
-  float: left;
-}
-
-.controllers-right {
-  float: right;
-}
-
-.button {
-  border: 1px solid #bbbbbb;
-  padding: 7px 15px;
-}
-
-.button:before {
-    content: ' ';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin-right: 7px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.button_label:before {
-    display: none;
-}
-
-.button-play:before     { background-image: url(./assets/svg/icon_play.svg); }
-.button-add:before      { background-image: url(./assets/svg/icon_plus_button.svg); }
-.button-download:before { background-image: url(./assets/svg/icon_download_button.svg); }
-
 .btn {
   border: 0;
   padding: 0;
